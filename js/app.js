@@ -111,7 +111,12 @@ const modalFunc = (index) => {
     })
 
 //Modal window should have a close button
-
+$modalWindow.on('click', e => {
+    if(e.target.textContent === 'X'){
+        off()
+    }
+    
+})
 
 
     
